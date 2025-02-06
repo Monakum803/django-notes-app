@@ -24,6 +24,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
+                    echo "the code building starting by docker"
                     docker_build("notes-app", "latest", "bhupendradixit")   
                 }
             }
